@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@kvarma/medium-common": "^1.0.0"
+  }
+}
