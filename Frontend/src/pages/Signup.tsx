@@ -78,7 +78,7 @@ export const Signup = ()=>{
                 </div>
             </div>
         <div className="hidden lg:block">
-        <Quote main={"Hi there Medium Welcome you to the world of blogging!"} by={"by Developer Kowshik Varma"}></Quote>
+        <Quote main={"Hi there LogB Welcomes you to the world of blogging!"} by={"by Developer Kowshik Varma"}></Quote>
         </div>
         </div>
     )
