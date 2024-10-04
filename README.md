@@ -1,4 +1,4 @@
-#### Logb 
+## Logb 
 - Blogging website inspired from medium.
 - logb is a blogging platform meticulously crafted using a modern tech stack to ensure scalability,
   performance, and a seamless user experience.
