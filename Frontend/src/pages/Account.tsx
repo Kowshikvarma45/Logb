@@ -8,6 +8,7 @@ export const Account = ()=>{
     const {loading,userdetails} = useuserBlog()
     if(loading) {
         return (
+            
             <div>
                 <div>
                     <Appbar/>
