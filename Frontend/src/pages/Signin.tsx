@@ -14,9 +14,9 @@ export const Signin = ()=>{
         password:""
     })
     const [msg,setmsg] = useState("")
-    const navigate = useNavigate()
+    const Navigate = useNavigate()
      if(localStorage.getItem("token")) {
-            navigate('/blogs')
+            Navigate('/blogs')
     }
     async function onclicked() {
         setmsg("Please Wait while we Processing...")
