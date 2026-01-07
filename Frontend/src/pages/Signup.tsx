@@ -14,6 +14,11 @@ export const Signup = ()=>{
         email:"",
         password:""
     })
+    useEffect(()=>{
+        if(localStorage.getItem("token")) {
+            Navigate('/blogs')
+        }
+    },[])
     const [msg,setmsg] = useState("")
     const Navigate = useNavigate()
     async function onclicked() {
