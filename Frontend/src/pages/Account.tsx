@@ -8,6 +8,7 @@ export const Account = ()=>{
     const {loading,userdetails} = useuserBlog()
     if(loading) {
         return (
+            
             <div>
                 <div>
                     <Appbar/>
@@ -46,7 +47,24 @@ export const Account = ()=>{
                         My Posts
                     </div>
                     <div className="md:w-6/12 p-5">
-                        {userdetails?.response.posts.map((val) => (
+                    {userdetails?.response?.posts?.length ? (
+                        userdetails.response.posts.map((val) => (
+                            <div key={val.id}>
+                                <Blogcomponent
+                                    Authorname={val.author.username}
+                                    title={val.title}
+                                    content={val.content}
+                                    publisedDate="19-08-2024"
+                                    id={val.id}
+                                    edit={true}
+                                />
+                            </div>
+                        ))
+                    ) : (
+                        <p className="text-gray-500">No posts available</p>
+                    )}
+
+                        {/* {userdetails?.response?.posts.length > 0 && userdetails?.response.posts.map((val) => (
                             <div key={val.id}>
                                 <Blogcomponent 
                                     Authorname={val.author.username} 
@@ -57,7 +75,7 @@ export const Account = ()=>{
                                     edit={true}
                                 />
                             </div>
-                        ))}
+                        ))} */}
                     </div>
                 </div>
             </div>
