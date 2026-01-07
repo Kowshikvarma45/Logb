@@ -14,12 +14,10 @@ export const Signin = ()=>{
         password:""
     })
     const [msg,setmsg] = useState("")
-    const Navigate = useNavigate()
-    useEffect(()=>{
-        if(localStorage.getItem("token")) {
-            Navigate('/blogs')
-        }
-    },[])
+    const navigate = useNavigate()
+     if(localStorage.getItem("token")) {
+            navigate('/blogs')
+    }
     async function onclicked() {
         setmsg("Please Wait while we Processing...")
         if(Signin.email != "" && Signin.password != "") {
