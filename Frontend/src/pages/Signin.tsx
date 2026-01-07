@@ -1,7 +1,7 @@
 import { Quote } from "../components/Quote"
 import { Header } from "../components/Header"
 import { Input } from "../components/Input"
-import { useState } from "react"
+import { useEffect,useState } from "react"
 import { signinValidationType} from "@kvarma/medium-common"
 import axios from "axios"
 import { useNavigate } from "react-router-dom"
