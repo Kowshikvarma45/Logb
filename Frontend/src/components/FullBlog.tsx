@@ -38,7 +38,7 @@ export const FullBlog = ({title,content,date,authorname}:fullblog)=>{
                                 {authorname || "Anonymous"}
                             </div>
                             <div className="pt-2 text-slate-500">
-                                Random catch phrase about the author's ability to grab the user's attention
+                                Most loved author
                             </div>
                         </div>
                     </div>  
