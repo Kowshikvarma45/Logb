@@ -14,12 +14,10 @@ export const Signup = ()=>{
         email:"",
         password:""
     })
-    const Navigate = useNavigate()
-    useEffect(()=>{
-        if(localStorage.getItem("token")) {
-            Navigate('/blogs')
-        }
-    },[])
+    const navigate = useNavigate()
+    if(localStorage.getItem("token")) {
+            navigate('/blogs')
+    }
     const [msg,setmsg] = useState("")
     
     async function onclicked() {
